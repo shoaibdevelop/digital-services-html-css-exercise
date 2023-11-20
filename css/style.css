@@ -1,0 +1,527 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+    box-shadow: unset;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+/* FONT FAMILY START */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2'),
+        url('../fonts/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-LightItalic.woff2') format('woff2'),
+        url('../fonts/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* FONT FAMILY END */
+
+/* TYPOGRAPHY CSS START */
+h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.btn {
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 600;
+    padding: 9px 17px;
+    border-radius: 5px;
+}
+
+span {
+    /* color: #F47820; */
+}
+
+/* TYPOGRAPHY CSS END */
+
+
+/* HEADER CSS START */
+header {
+    background-color: #fff;
+    /* padding: 8px 25px; */
+    padding: 8px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.header-innerwrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 20%;
+}
+
+.header-right-sec,
+.header-right-sec ul{
+    display: flex;
+    align-items: center;
+}
+
+/* NAV LINKS CSS START */
+.header-right-sec ul li a {
+    color: #000000;
+    margin-right: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all ease 1s;
+}
+
+.header-right-sec ul li:last-child a {
+    margin-right: 0px;
+}
+
+.header-right-sec ul {
+    margin-right: 60px;
+}
+
+.header-right-sec {
+    width: 70%;
+    justify-content: flex-end;
+}
+
+/* NAV LINKS CSS END */
+
+/* HEADER CSS END */
+
+
+/* BANNER CSS START */
+.banner-outerwrap{
+    background-color: #edf0f7;
+    /* min-height: 100vh; */
+    text-align: center;
+}
+.banner-innerwrap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.banner-innerwrap h1,
+.banner-innerwrap p{
+    margin-bottom: 20px;
+}
+.banner-btn a{
+    border: 2px solid #2d3648;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all ease 1s;
+}
+.banner-btn a:first-child{
+    background-color: #2d3648;
+    margin-right: 9px;
+}
+.banner-btn a:hover{
+    background-color: transparent;
+    color: #2d3648;
+}
+.banner-btn a:last-child:hover{
+    background-color: #2d3648;
+    color: #fff;
+}
+.banner-btn a:last-child{
+    color: #2d3648;
+    background-color: transparent;
+}
+/* BANNER CSS END */
+
+
+/* PHOTO CSS START */
+.photo-sec-outerwrap{
+    background-color: #fff;
+    padding: 33px 0px;
+}
+.photo-sec-img img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* PHOTO CSS END */
+
+/* FOOTER CSS START */
+footer{
+    background-color: #1a202c;
+    padding: 16px 0px;
+}
+footer .logo{
+    margin-bottom: 18px;
+}
+.footer-innerwrap{
+    
+}
+.footer-innerwrap span{
+    margin-bottom: 21px;
+    display: inline-block;
+    color: #8f9398;
+    text-transform: capitalize;
+}
+.footer-innerwrap ul li a{
+    font-size: 16px;
+    color: #8f9398;
+    margin-bottom: 16px;
+}
+.footer-innerwrap ul li:last-child a{
+    margin-bottom: 0px;
+}
+/* FOOTER CSS END */
+
+/* MEDIA QUERY START */
+@media only screen and (max-width: 1366px) {
+    h1 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 19px;
+    }    
+}
+@media only screen and (max-width: 1199px) {
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 15px;
+    }    
+    .photo-sec-img img {
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    /* HAMBURGER CSS START */
+    .hamburger {
+        display: block;
+    }
+    .hamburger span{
+        width: 28px;
+        height: 2px;
+        display: block;
+        background-color: #000;
+        margin-bottom: 3px;
+    }
+    .hamburger span:last-child{
+        margin-bottom: 0px;
+    }
+    .header-right-sec {
+        justify-content: flex-start;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background-color: rgba(0,0,0,0.9);
+        border-radius: 7px;
+        padding: 14px;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition: all ease 1s;
+    }
+    .opacity{
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+    }
+    .header-right-sec ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0px;
+    }
+    .header-right-sec ul li a{
+        margin-right: 0px;
+        margin-bottom: 7px;
+        color: #fff;
+    }
+    /* HAMBURGER CSS END */
+    .banner-innerwrap {
+        padding: 90px 0 33px;
+        height: auto;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .photo-sec-img img {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .logo {
+        width: 30%;
+    }
+    .header-right-sec{
+        top: 50px;
+    }
+    .banner-innerwrap {
+        padding: 90px 0 33px;
+        height: auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .photo-sec-img img {
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 640px){
+    .banner-innerwrap {
+        width: 100%;
+    }
+    .logo {
+        width: 40%;
+    }
+    .photo-sec-img img {
+        height: 250px;
+    }
+    .footer-innerwrap span,
+    .footer-innerwrap ul li a{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .logo {
+        width: 50%;
+    }
+    .header-right-sec {
+        top: 44px;
+    }
+    .header-right-sec ul li a{
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .photo-sec-img img {
+        height: 119px;
+    }
+}
+/* MEDIA QUERY END */
